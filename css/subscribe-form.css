@@ -1,0 +1,69 @@
+#subscribe-form {
+  position: relative;
+  margin: 28px 0 68px;
+  text-align: center;
+}
+#subscribe-form label {
+  display: block;
+  position: relative;
+  width: 370px;
+  margin: 0 auto;
+  outline: none;
+  background: #fff;
+  box-sizing: border-box;
+  height: 48px;
+}
+@media (max-width: 479px) {
+  #subscribe-form label {
+    width: 100%;
+  }
+}
+#subscribe-form label input {
+  display: block;
+  background: transparent;
+  width: 100%;
+  padding: 10px 5px 10px 22px;
+  color: #a7a7a7;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  margin: 0;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  height: 100%;
+}
+#subscribe-form .error {
+  position: absolute;
+  right: 5px;
+  font-size: 10px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+#subscribe-form .error {
+  top: 0;
+}
+#subscribe-form .success {
+  position: absolute;
+  letter-spacing: normal;
+  left: 50%;
+  margin-left: -165px;
+  bottom: -29px;
+}
+#subscribe-form .error {
+  color: #ff7302;
+  letter-spacing: normal;
+  overflow: hidden;
+  height: 0px;
+}
+#subscribe-form .success {
+  display: none;
+  color: #ff7302;
+}
+#subscribe-form label.invalid .error {
+  height: 21px;
+}
+#subscribe-form .btn2 {
+  margin-top: 26px;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contacts</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/contact-form.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/TMForm.js"></script>
+    <script src="js/modal.js"></script>
+    <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+</head>
+
+<body>
+<div class="page">
+<div class="wrap-container">
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header" class="header">
+    <div id="stuck_container">
+        <div class="container">
+            <div class="company">
+                <div class="company_cnt">
+                    <h1 class="name">
+                        <a href="#">Beatrizdaniels</a>
+                    </h1>
+
+                    <p class="company_slogan">charity foundation</p>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="social-wrap">
+                    <ul class="social-list">
+                        <li>
+                            <a class="fa fa-instagram" href="http://instagram.com/Beatrizdaniels_foundation?igshid=MjEwN2lyYWYwYw=="></a>
+                        </li>
+                    </ul>
+
+                    <!--<form id="search" class="search" action="search/search.php"
+                          method="get"
+                          accept-charset="utf-8">
+                        <label class="input_wrap" for="search2">
+                            <input id="search2" onfocus="if(this.value == 'Search'){this.value = '';}"
+                                   onblur="if(this.value == ''){this.value='Search';}" type="text" name="s"
+                                   value="Search"/>
+                        </label>
+                        <a onclick="document.getElementById('search').submit()"
+                           href="#">
+                            <img src="./images/search.png" alt=""/>
+                        </a>
+                    </form>-->
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <nav>
+                    <ul class="sf-menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li >
+                            <a href="index-1.html">About us</a>
+                        </li>
+                        <li>
+                            <a href="index-2.html">Gallery</a>
+                        </li>
+                        <li class="current">
+                            <a href="index-4.html">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content" class="content">
+
+    <div class="container">
+        <div class="wrapper3">
+            <div class="row">
+                <div class="grid_6">
+                    <h2>Contact Info</h2>
+                    <address>
+                         <br/>
+                        <dl>
+                            <dt>Instagram: <br/><br/>
+                                Telephone: <br/><br/>
+                            <dd>Beatrizdaniels_foundation <br/><br/>
+                                0802226047, 08036737503 <br/><br/>
+                            </dd>
+                        </dl>
+                        <p class="mail">E-mail:
+                            <a href="mailto:Beatrizdanielsfoundation@gmail.com">Beatrizdanielsfoundation@gmail.com</a>
+                        </p>
+                    </address>
+                </div>
+                <div class="grid_6">
+                    <h2>Contact Form</h2>
+
+                    <div class="form-wrapper">
+                        <form id="contact-form">
+                            <div class="contact-form-loader"></div>
+                            <label class="name">
+                                <input type="text" name="name" placeholder="Name*:" value=""
+                                       data-constraints="@Required @JustLetters"/>
+                                <span class="empty-message">*This field is required.</span>
+                                <span class="error-message">*This is not a valid name.</span>
+                            </label>
+                            <label class="email">
+                                <input type="text" name="email" placeholder="Email*:" value=""
+                                       data-constraints="@Required @Email"/>
+                                <span class="empty-message">*This field is required.</span>
+                                <span class="error-message">*This is not a valid email.</span>
+                            </label>
+                            <label class="phone">
+                                <input type="text" name="phone" placeholder="Phone:" value=""
+                                       data-constraints="@Required @JustNumbers"/>
+                                <span class="error-message">*This is not a valid phone.</span>
+                            </label>
+                            <label class="message">
+                                <textarea name="message" placeholder="Message:"
+                                          data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                <span class="empty-message">*This field is required.</span>
+                                <span class="error-message">*The message is too short.</span>
+                            </label>
+
+                            <div class="btn-wrapper">
+                                <a class="form-btn" href="#" data-type="submit">Send</a>
+                            </div>
+                            <div class="modal fade response-message">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">Modal title</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            You message has been sent! We will be in touch soon.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer" class="footer">
+    <div class="container">
+        <p class="copyright">
+            &copy;
+            <a href="#">Privacy Policy</a>
+        </p>
+        <ul class="list">
+            <li>
+                <a href="#">Support</a>
+            </li>
+            <li>
+                <a href="#">FAQs</a>
+            </li>
+            <li>
+                <a href="#">Help</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</div>
+</div>
+<script src="js/google-map.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

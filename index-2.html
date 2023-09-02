@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/touchTouch.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/touchTouch.jquery.js"></script>
+    <script>
+        $(function () {
+            $('a[data-gal]').touchTouch();
+        });
+    </script>
+    <script src="js/wow/wow.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+</head>
+
+<body>
+<div class="page">
+<div class="wrap-container">
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header" class="header">
+    <div id="stuck_container">
+        <div class="container">
+            <div class="company">
+                <div class="company_cnt">
+                    <h1 class="name">
+                        <a href="#">Beatrizdaniels</a>
+                    </h1>
+
+                    <p class="company_slogan">charity foundation</p>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="social-wrap">
+                    <ul class="social-list">
+                        <li>
+                            <a class="fa fa-instagram" href="http://instagram.com/Beatrizdaniels_foundation?igshid=MjEwN2lyYWYwYw=="></a>
+                        </li>
+                    </ul>
+
+                    <!--<form id="search" class="search" action="search/search.php"
+                          method="get"
+                          accept-charset="utf-8">
+                        <label class="input_wrap" for="search2">
+                            <input id="search2" onfocus="if(this.value == 'Search'){this.value = '';}"
+                                   onblur="if(this.value == ''){this.value='Search';}" type="text" name="s"
+                                   value="Search"/>
+                        </label>
+                        <a onclick="document.getElementById('search').submit()"
+                           href="#">
+                            <img src="./images/search.png" alt=""/>
+                        </a>
+                    </form>-->
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <nav>
+                    <ul class="sf-menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="index-1.html">About us</a>
+                        </li>
+                        <li class="current">
+                            <a href="index-2.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="index-4.html">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content" class="content">
+
+    <div class="container">
+        <div class="wrapper2">
+            <div class="isotope-filters button-group wow fadeInRight" data-wow-delay="0.3s">
+                <a class="button active" data-isotope-filter="*" data-isotope-group='gallery' href="#">All</a>
+            </div>
+            <div class="clearfix"></div>
+            <div class="isotope" data-isotope-layout='fitRows' data-isotope-group='gallery'>
+                <div class="element-item grid_4 praesent" data-filter="praesent">
+                    <a class="gallery" data-gal href="./images/children2.jpg">
+                        <img src="./images/children2.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 vestibulum" data-filter="vestibulum">
+                    <a class="gallery" data-gal href="./images/children3.jpg">
+                        <img src="./images/children3.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 praesent" data-filter="praesent">
+                    <a class="gallery" data-gal href="./images/children9.jpg">
+                        <img src="./images/children9.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 perspiciatis" data-filter="perspiciatis">
+                    <a class="gallery" data-gal href="./images/children11.webp">
+                        <img src="./images/children11.webp" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 praesent" data-filter="praesent">
+                    <a class="gallery" data-gal href="./images/page3-img5_original.jpg">
+                        <img src="./images/page3-img5.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 vestibulum" data-filter="vestibulum">
+                    <a class="gallery" data-gal href="./images/children14.jpg">
+                        <img src="./images/children14.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 perspiciatis" data-filter="perspiciatis">
+                    <a class="gallery" data-gal href="./images/children5.jpg">
+                        <img src="./images/children5.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 perspiciatis" data-filter="perspiciatis">
+                    <a class="gallery" data-gal href="./images/children20.jpg">
+                        <img src="./images/children20.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 praesent" data-filter="praesent">
+                    <a class="gallery" data-gal href="./images/children15.jpg">
+                        <img src="./images/children15.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 vestibulum" data-filter="vestibulum">
+                    <a class="gallery" data-gal href="./images/children9.jpg">
+                        <img src="./images/children22.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 vestibulum" data-filter="vestibulum">
+                    <a class="gallery" data-gal href="./images/children25.jpg">
+                        <img src="./images/children25.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 vestibulum" data-filter="vestibulum">
+                    <a class="gallery" data-gal href="./images/children12.jpg">
+                        <img src="./images/children12.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 vestibulum" data-filter="vestibulum">
+                    <a class="gallery" data-gal href="./images/children12.jpg">
+                        <img src="./images/children25.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 vestibulum" data-filter="vestibulum">
+                    <a class="gallery" data-gal href="./images/children12.jpg">
+                        <img src="./images/children26.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+                <div class="element-item grid_4 vestibulum" data-filter="vestibulum">
+                    <a class="gallery" data-gal href="./images/children12.jpg">
+                        <img src="./images/children17.jpg" alt=""/>
+                        <span class="overlay"></span>
+                        <span class="hover">zoom</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer" class="footer">
+    <div class="container">
+        <p class="copyright">
+            &copy;
+            <a href="index-5.html">Privacy Policy</a>
+        </p>
+        <ul class="list">
+            <li>
+                <a href="#">Support</a>
+            </li>
+            <li>
+                <a href="#">FAQs</a>
+            </li>
+            <li>
+                <a href="#">Help</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

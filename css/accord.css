@@ -1,0 +1,70 @@
+#accordion {
+  margin-top: 40px;
+}
+#accordion .divider {
+  background: #e0e0e0;
+  padding: 0;
+}
+#accordion .ui-accordion-header {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  line-height: 24px;
+  padding: 40px 40px 38px 98px;
+  min-height: 0;
+  background: url("../images/accord-icon.png") no-repeat 98.5% center;
+  transition: .3s;
+}
+#accordion .ui-accordion-header .date {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 19px;
+  width: 70px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  background: #444;
+  color: #fff;
+  font-weight: 800;
+  padding: 8px 0 9px;
+  transition: .3s;
+}
+@media (max-width: 479px) {
+  #accordion .ui-accordion-header .date {
+    left: 50%;
+    margin-left: -35px;
+  }
+}
+#accordion .ui-accordion-header:hover,
+#accordion .ui-accordion-header-active {
+  text-decoration: none;
+  color: #444444;
+}
+#accordion .ui-accordion-header:hover .date,
+#accordion .ui-accordion-header-active .date {
+  background: #ff7302;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  #accordion .ui-accordion-header {
+    padding-top: 26px;
+  }
+}
+@media (max-width: 767px) {
+  #accordion .ui-accordion-header {
+    padding-top: 12px;
+  }
+}
+@media (max-width: 479px) {
+  #accordion .ui-accordion-header {
+    padding: 100px 40px 38px 0;
+  }
+}
+#accordion .ui-accordion-header-active {
+  background-image: url("../images/accord-icon-02.png");
+  padding-bottom: 10px;
+}
+#accordion div {
+  padding: 10px;
+}
